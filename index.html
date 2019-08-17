@@ -6,43 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Leonidas Esteban</title>
     <link rel="icon"  type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header class="header">
-        <div>
-            <figure class="logo">
-                <img src="images/logo.png" alt="Logo de http://leonidasesteban.com">
-            </figure>
-            <nav class="menu">
-                    <ol>
-                        <li>
-                            <a class="link" href="#portafolio">Portafolio</a>
-                        </li>
-                        <li>
-                            <a class="link" href="#eventos">Experiencia</a>
-                        </li>
-                        <li>
-                            <a class="link" href="#contacto">Trabajemos juntos</a>
-                        </li>
-                    </ol>
-                </nav>
-        </div>
+        <figure class="logo">
+            <img src="images/logo.png" alt="Logo de http://leonidasesteban.com">
+        </figure>
+        <nav class="menu">
+            <ol>
+                <li>
+                    <a class="link" href="#portafolio">Portafolio</a>
+                </li>
+                <li>
+                    <a class="link" href="#eventos">Experiencia</a>
+                </li>
+                <li>
+                    <a class="link" href="#contacto">Trabajemos juntos</a>
+                </li>
+            </ol>
+        </nav>
     </header>
     <section class="hero">
         <h1>
             Hola! Soy <strong>Leonidas Esteban</strong> <br> Desarrollador <strong>JavaScript</strong> <br> con pasión por la <strong>enseñanza</strong>
         </h1>
-        <img src="images/hero.jpg" alt="Imagen de portada" width="500" height="300">
+        <!-- <img src="images/hero.jpg" alt="Imagen de portada" width="500" height="300"> -->
     </section>
     <section id="portafolio" class="portfolio">
         <h2>Portafolio (Proyectos destacados)</h2>
         <article class="project">
-            <h3 class="project-title">Platzi Video</h3>
-            <h6 class="project-course">React Native / React</h6>
-            <p class="project-date"><small><strong>Date:</strong>01/07/2018</small></p>
-            <p class="project-url"><small><strong>You can find it in:</strong>www.platzi.com/native</small></p>
-            <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y React Native.</p>
+            <div class="project-details">
+                <h3 class="project-title">Platzi Video</h3>
+                <h6 class="project-course">React Native / React</h6>
+                <p class="project-date"><small><strong>Date:</strong>01/07/2018</small></p>
+                <p class="project-url"><small><strong>You can find it in:</strong>www.platzi.com/native</small></p>
+                <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y React Native.</p>    
+            </div>
+            <figure class="project-imageContainer">
+                <img class="project-image" src="images/platzi-video-react-native.png" alt="Imagen del proyecto" width="500" >
+            </figure>
+        </article>
+        <article class="project">
+            <div class="project-details">
+                <h3 class="project-title">Platzi Video</h3>
+                <h6 class="project-course">React Native / React</h6>
+                <p class="project-date"><small><strong>Date:</strong>01/07/2018</small></p>
+                <p class="project-url"><small><strong>You can find it in:</strong>www.platzi.com/native</small></p>
+                <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y React Native.</p>    
+            </div>
             <figure class="project-imageContainer">
                 <img class="project-image" src="images/platzi-video-react-native.png" alt="Imagen del proyecto" width="500" >
             </figure>
@@ -66,6 +79,13 @@
             <button>Enviar</button>
         </form>
     </section>
-    <footer class="footer">footer</footer>
+    <footer class="footer">
+        <div>
+            <p>Curso de desarrollo web online 2018 <img src="images/platzi.png" alt="Platzi logo"></p>
+        </div>
+        <div>
+            <p>Designed with <\3 by <a href="https://twitter.com/thespianartist">@thespianartist</a> </p>
+        </div>
+    </footer>
 </body>
 </html>
