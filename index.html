@@ -22,7 +22,7 @@
                             <a class="link" href="#portafolio">Portafolio</a>
                         </li>
                         <li>
-                            <a class="link" href="#eventos">Experiencia</a>
+                            <a class="link" href="#experiencia">Experiencia</a>
                         </li>
                         <li>
                             <a class="link" href="#contacto">Trabajemos juntos</a>
@@ -68,7 +68,7 @@
             </article>
         </div>
     </section>
-    <h2 class="event-list-title">Más sobre mi experiencia</h2>
+    <h2 class="event-list-title" id="experiencia">Más sobre mi experiencia</h2>
     <section id="eventos" class="event-list"> 
         <div class="container">
             <article class="event">
@@ -149,6 +149,14 @@
         // console.log(burgerButton);
         ipad.addListener(validation);
 
+        function hideShow(){
+            if (menu.classList.contains('is-active')){
+                menu.classList.remove('is-active');
+            }else{
+                menu.classList.add('is-active');
+            }
+        }
+
         function validation(event){
             if(event.matches){
                 burgerButton.addEventListener('click', hideShow);
@@ -157,13 +165,8 @@
             }
         }
 
-        function hideShow(){
-            if (menu.classList.contains('is-active')){
-                menu.classList.remove('is-active');
-            }else{
-                menu.classList.add('is-active');
-            }
-        }
+        validation(ipad);
+        
     </script>
 </body>
 </html>
